@@ -1,0 +1,158 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.board {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    background-color: #20b2aa;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+input {
+    width: 170px;
+    padding: 5px;
+    background-color: lightsteelblue;
+    border: none;
+    border-radius: 5px;
+    height: 1.5em;
+}
+
+form {
+
+    display: grid;
+    /* Changed from flex */
+    grid-template-columns: auto auto;
+    /* Creates two columns for the inputs */
+    column-gap: 20px;
+    row-gap: 15px;
+
+}
+
+form>div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
+}
+
+.icon-div {
+    display: flex;
+    column-gap: 5px;
+    align-content: center;
+    justify-content: center;
+}
+
+.start-button {
+    grid-column: 1/2;
+    /*Tells the button to span across both input columns*/
+    justify-self: end;
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 130px;
+    height: 30px;
+    background-color: skyblue;
+    border: 2px solid lightgray;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+.restart-icon {
+    width: 1em;
+    height: 1em;
+}
+
+.restart-button {
+    grid-column: 2/3;
+    justify-self: start;
+
+    display: flex;
+    column-gap: 8px;
+    align-content: center;
+    justify-content: center;
+    width: 130px;
+    height: 30px;
+    padding-top: 3px;
+    background-color: skyblue;
+    border: 2px solid lightgray;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+.actualBoard {
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    background-color: rgba(0, 0, 0, 0.1);
+    align-content: center;
+    justify-content: center;
+    width: 450px;
+    height: 450px;
+    border-radius: 8px;
+    gap: 8px;
+    border: none;
+}
+
+
+.cell {
+    background-color: #20b2aa;
+    border: none;
+    font-size: 80px;
+    opacity: 100%;
+
+}
+
+
+
+.message-display {
+    background-color: #20b2aa;
+    width: 400px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.mark-x {
+    color: #FF0000;
+}
+
+.mark-o {
+    color: #13D82A;
+    font-family: 'Fredoka', 'Futura', sans-serif;
+}

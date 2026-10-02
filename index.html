@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,57 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer> </script>
 </head>
+
 <body>
-    
+
+    <div class="board">
+
+        <form id="player-details-form" action="#" method="post">
+
+            <div>
+                <div class="icon-div">
+                    <h3>Symbol:</h3>
+                    <img class="top-icon" src="Icons/cross.png" alt="">
+                </div>
+
+
+                <input type="text" id="player1" placeholder="Player 1" value="Player 1">
+
+            </div>
+
+            <div>
+                <div class="icon-div">
+                    <h3>Symbol:</h3>
+                    <img class="top-icon" src="Icons/circle.png" alt="">
+                </div>
+
+                <input type="text" id="player2" placeholder="Player 2" value="Player 2">
+            </div>
+
+            <button type="button" form="player-details-form" class="start-button">Start Game</button>
+            <button type="button" class="restart-button"><img class="restart-icon" src="Icons/restart.png"
+                    alt="">Restart</button>
+
+        </form>
+
+
+        <div class="actualBoard">
+            <button class="cell" data-row="0" data-column="0"></button>
+            <button class="cell" data-row="0" data-column="1"></button>
+            <button class="cell" data-row="0" data-column="2"></button>
+            <button class="cell" data-row="1" data-column="0"></button>
+            <button class="cell" data-row="1" data-column="1"></button>
+            <button class="cell" data-row="1" data-column="2"></button>
+            <button class="cell" data-row="2" data-column="0"></button>
+            <button class="cell" data-row="2" data-column="1"></button>
+            <button class="cell" data-row="2" data-column="2"></button>
+        </div>
+
+
+        <div class="message-display"></div>
+    </div>
+
+
 </body>
+
 </html>
